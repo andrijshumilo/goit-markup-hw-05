@@ -481,7 +481,125 @@
             </li>
           </ul>
         </div>
+        <div class="mail-input">
+          <p class="subscribe-text">Subscribe</p>
+          <form class="mail-wrappere">
+            <label class="text-mail-input">
+              <input
+                class="mail-form-input"
+                name="telegram-name"
+                type="text"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="telegram-btn" type="button">
+              Subscribe
+              <svg class="model-telegram-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <div class="backdrop is-pen">
+      <div class="modal">
+        <button class="model-clouse-btn" type="button">
+          <svg class="model-clouse-icon" width="24" height="24">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="model-slogan">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="review-form">
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-name">name</label>
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                required
+              />
+              <svg class="review-form-input-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-name"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-phone"
+              >phone</label
+            >
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-input"
+                id="user-phone"
+                name="user-phone"
+                type="tel"
+              />
+              <svg class="review-form-input-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-email"
+              >email</label
+            >
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-input"
+                id="user-email"
+                name="user-email"
+                type="email"
+              />
+              <svg class="review-form-input-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-comment"
+              >Comment</label
+            >
+            <textarea
+              class="review-form-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+              required
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="review-form-checkbox visually-hidden"
+              id="policy-privcy"
+              name="policy-privacy"
+              type="checkbox"
+              value="true"
+              required
+            />
+
+            <label class="review-form-checkbox-lable" for="policy-privacy">
+              <span class="review-form-castom-checkbox">
+                <svg
+                  class="review-form-checkbox-icon"
+                  width="10px"
+                  height="8px"
+                >
+                  <use href="./images/symbol-defs.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="review-form-policy-linc accent-color">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="review-form-submin-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
