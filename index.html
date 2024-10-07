@@ -488,11 +488,11 @@
               <input
                 class="mail-form-input"
                 name="telegram-name"
-                type="text"
+                type="email"
                 placeholder="E-mail"
               />
             </label>
-            <button class="telegram-btn" type="button">
+            <button class="telegram-btn" type="submit">
               Subscribe
               <svg class="model-telegram-icon" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-telegram"></use>
@@ -505,7 +505,7 @@
     <div class="backdrop is-pen">
       <div class="modal">
         <button class="model-clouse-btn" type="button">
-          <svg class="model-clouse-icon" width="24" height="24">
+          <svg class="model-clouse-icon" width="8" height="8">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
@@ -514,7 +514,7 @@
         </p>
         <form class="review-form">
           <div class="review-form-field-wrapper">
-            <label class="review-form-field-label" for="user-name">name</label>
+            <label class="review-form-field-label" for="user-name"> Name</label>
             <div class="review-form-input-wrapper">
               <input
                 class="review-form-input"
@@ -523,14 +523,14 @@
                 type="text"
                 required
               />
-              <svg class="review-form-input-icon" width="18" height="18">
+              <svg class="review-form-input-icon" width="18" height="24">
                 <use href="./images/symbol-defs.svg#icon-name"></use>
               </svg>
             </div>
           </div>
           <div class="review-form-field-wrapper">
             <label class="review-form-field-label" for="user-phone"
-              >phone</label
+              >Phone</label
             >
             <div class="review-form-input-wrapper">
               <input
@@ -539,14 +539,14 @@
                 name="user-phone"
                 type="tel"
               />
-              <svg class="review-form-input-icon" width="18" height="18">
+              <svg class="review-form-input-icon" width="18" height="24">
                 <use href="./images/symbol-defs.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
           <div class="review-form-field-wrapper">
             <label class="review-form-field-label" for="user-email"
-              >email</label
+              >Email</label
             >
             <div class="review-form-input-wrapper">
               <input
@@ -555,7 +555,7 @@
                 name="user-email"
                 type="email"
               />
-              <svg class="review-form-input-icon" width="18" height="18">
+              <svg class="review-form-input-icon" width="18" height="24">
                 <use href="./images/symbol-defs.svg#icon-email"></use>
               </svg>
             </div>
@@ -575,20 +575,16 @@
           <div class="review-form-checkbox-wrapper">
             <input
               class="review-form-checkbox visually-hidden"
-              id="policy-privcy"
-              name="policy-privacy"
+              id="user-privacy"
+              name="user-privacy"
               type="checkbox"
               value="true"
               required
             />
 
-            <label class="review-form-checkbox-lable" for="policy-privacy">
+            <label class="review-form-checkbox-lable" for="user-privacy">
               <span class="review-form-castom-checkbox">
-                <svg
-                  class="review-form-checkbox-icon"
-                  width="10px"
-                  height="8px"
-                >
+                <svg class="review-form-checkbox-icon" width="10" height="8">
                   <use href="./images/symbol-defs.svg#icon-check"></use>
                 </svg>
               </span>

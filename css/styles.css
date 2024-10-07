@@ -489,12 +489,6 @@ display: flex;
 
 }
 
-.wrappere-mail-input {
-
-    
-    
-
-}
 .subscribe-text {
     font-weight: 500;
     font-size: 16px;
@@ -557,7 +551,7 @@ display: flex;
 
     /* ================== Modal Windows  =============== */
 .backdrop {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 9;
@@ -584,14 +578,14 @@ display: flex;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-padding-top: 70px;
+padding-top: 72px;
 padding-left: 24px;
 padding-right: 24px;
 padding-bottom: 24px;
 border-radius: 4px;
     width: 408px;
     height: 80%;
-    max-height: 584px;
+    min-height: 584px;
     overflow: auto;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background-color: #fcfcfc;
@@ -602,18 +596,36 @@ border-radius: 4px;
     transform: translate(-50%, -100%);
 }
 .model-clouse-btn {
-position: absolute;
-top: 32px;
-right: 32px;
-background-color: transparent;
-border: none;
-padding : 0 ;
-line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .model-clouse-btn:hover,
 .model-clouse-btn:focus {
-
+background-color: #404bbf;
+border:none ;
 }
+.model-clouse-icon {
+    fill: #ffffff
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.model-clouse-icon:hover,
+.model-clouse-icon:focus {
+    fill: #ffffff
+}
+
 .model-slogan{
 width: 360px ;
 font-weight: 500;
@@ -623,7 +635,7 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
 
-margin-bottom: 17px;
+margin-bottom: 16px;
 }
 .review-form-field-label{
     display: block;
@@ -646,13 +658,14 @@ margin-bottom: 17px;
             letter-spacing: 0.04em;
             color: #111111;
             transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        outline: transparent;
 }
 .review-form-input:focus {
     outline:none ;
     border-color: #4d5ae5 ;
 }
 .review-form-field-wrapper {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 .review-form-input-wrapper {
     position: relative;
@@ -673,7 +686,7 @@ margin-bottom: 17px;
     width: 100%;
     height: 120px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    background-color: transparent;
+    color: rgba(46, 47, 66, 0.4);
     padding: 8px 16px;
     resize: none;
         font-size: 12px;
@@ -681,6 +694,7 @@ margin-bottom: 17px;
         letter-spacing: 0.04em;
         color: #111111;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+        outline: transparent;
 }
 .review-form-comment::placeholder {
 color: rgba(46, 47, 66, 0.4);
@@ -705,7 +719,7 @@ color: rgba(46, 47, 66, 0.4);
  .review-form-castom-checkbox {
     display: inline-flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -720,13 +734,18 @@ color: rgba(46, 47, 66, 0.4);
 
   
 .review-form-checkbox-lable {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #2e2f42;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.04em;
+            color: #8e8f99;
 }
+.review-form-checkbox:checked+
+.review-form-checkbox-lable>.review-form-castom-checkbox {
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
+}
+
 .review-form-policy-linc{
     text-decoration: underline;
 }
@@ -734,7 +753,7 @@ color: rgba(46, 47, 66, 0.4);
     color:#4d5ae5; 
 }
 .review-form-checkbox-wrapper{
-    margin-bottom: 26px;
+    margin-bottom: 24px;
     
 }
 .review-form-submin-btn {
@@ -746,8 +765,12 @@ color: rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     padding: 16px 32px;
     min-width: 169px;
+    height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
+    cursor: pointer;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
                 font-weight: 500;
                 font-size: 16px;
