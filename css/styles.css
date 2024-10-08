@@ -621,9 +621,9 @@ border:none ;
     fill: #2e2f42;
     transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.model-clouse-btn:hover,
-.model-clouse-btn:focus {
-    fill: #ffffff
+.model-clouse-ico:hover,
+.model-clouse-ico:focus {
+    fill: #ffffff;
 }
 
 .model-slogan{
@@ -682,6 +682,9 @@ margin-bottom: 16px;
 .review-form-input:focus+.review-form-input-icon {
     fill: #4d5ae5;
 }
+.texteria-form-field-wrapper{
+    margin-bottom: 16px;
+}
 .review-form-comment {
     border-radius: 4px;
     width: 100%;
@@ -691,13 +694,13 @@ margin-bottom: 16px;
     background-color: transparent;
     padding: 8px 16px;
     resize: none;
-        font-size: 12px;
+    font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
-        color: #111111;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
         outline: transparent;
 }
+
 .review-form-comment::placeholder {
 color: rgba(46, 47, 66, 0.4);
 }
